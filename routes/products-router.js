@@ -18,7 +18,7 @@ function getProducts(request,response,next){
   products.get()
     .then(data => {
       const output = {
-        count: data.length;
+        count: data.length,
         results: data,
       };
       response.status(200).json(output);
